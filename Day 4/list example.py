@@ -12,3 +12,5 @@ a1[6]="ameya"
 print(a1)
 a1.remove('abc')
 print(a1)
+a1.insert(2,'yes')
+print(a1)
