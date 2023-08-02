@@ -1,15 +1,7 @@
-class Sample():
-    a=10
-    b=30
+N=42
+if N%5:
+    print("n is divisible by 5")
+else:
+    print("not divisible")
 
-    def m1(self):
-        print("M1 Function")
-
-
-def m1(self):
-    print('m1function')
-
-obj=Sample()
-print(obj.a)
-obj.m1()
 
