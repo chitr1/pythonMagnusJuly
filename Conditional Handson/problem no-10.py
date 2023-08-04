@@ -1,6 +1,18 @@
-a=30
-b=30
+A=int(input("Enter the value of A = "))
+B=int(input("Enter the value of B = "))
+C=A*A
+D=B*B
 
-while(a+b)<=60:
-    print(a+b)
-    a=a+1
+number=C+D
+
+if (number >= 60):
+    print("The total value is 60 or greater")
+else:
+    print("The total value is less than 60")
+
+
+
+
+
+
+
