@@ -9,23 +9,25 @@ class Car_2022:
         print("7 music touch player")
 
 
-def car_2023():
+class car_2023(Car_2022):
+    def car_2023(self):
+
     def Wheels(self):
         print("Normal alloy player")
 
-class car_2023(Car_2022):
+
     def Roof(self):
         print("panaromic roof")
-        super().Roof()
-
 
     def Music(self):
         print("11 music touch player")
 
-    obj1 = car_2023()
-    obj1.Wheels()
+    obj1=car_2023()
     obj1.Roof()
+    obj1.Wheels()
     obj1.Music()
+
+
 
 
 
