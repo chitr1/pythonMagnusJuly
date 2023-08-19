@@ -20,4 +20,6 @@ obj1=Sample()
 obj2=Demo()
 obj1.start()
 obj2.start()
+obj1.join()
+print("The End")
 
