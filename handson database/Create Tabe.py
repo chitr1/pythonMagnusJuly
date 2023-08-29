@@ -1,12 +1,28 @@
 from mysql import connector
-myDbconnection=connector.connect(host="localhost",user="root",password="root",database="pythonmagnus")
-c1=myDbconnection.cursor()
 
 class Table:
+    global myDbConnection
+    myDbconnection=connector.connect(host="localhost",user="root",password="root",database="pythonmagnus")
+    global c1
+    c1=myDbconnection.cursor()
     def create(self):
-        c1.execute("create Table students (name varchar(20),class int,marks int)")
-        myDbconnection.commit()
-        myDbconnection.close()
-        print(myDbconnection)
+        c1.execute("create Table student1 (name varchar(20),class int,marks int)")
+
+
+    def insert(self):
+        c1.insert("insert into student1 values('wik',12,7,90)")
+        c1.insert("insert into student1 values('Sam',13,8,92)")
+
+
+    def select(self):
+        c1.excecute("select*from students")
+        result=fetchall()
+        print(result)
+
+
+obj1 = Table()
+obj1.create()
+obj1.insert()
+
 
 
