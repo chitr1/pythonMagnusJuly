@@ -7,11 +7,11 @@ class Table:
     c1=myDbconnection.cursor()
     def create(self):
         c1.execute("create Table student1 (name varchar(20),class int,marks int)")
-
-
-    def insert(self):
-        c1.insert("insert into student1 values('wik',12,7,90)")
-        c1.insert("insert into student1 values('Sam',13,8,92)")
+     def insert(self):
+        c1.execute("insert into student1 values('wik',12,90)")
+        c1.execute("insert into student1 values('Sam',13,92)")
+        myDbconnection.commit()
+        myDbconnection.close()
 
 
     def select(self):
